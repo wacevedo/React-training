@@ -120,4 +120,4 @@ class Results extends React.Component {
     }
 }
 
-module.exports = Results;
+export default Results;
