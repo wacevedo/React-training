@@ -63,7 +63,7 @@ class Results extends React.Component {
         api.battle([
             players.playerOneName,
             players.playerTwoName
-        ]).then(function (results) {
+        ]).then((results) => {
             if (results === null) {
                 return this.setState(function () {
                     return {
@@ -81,7 +81,7 @@ class Results extends React.Component {
                     loading: false
                 }
             });
-        }.bind(this));
+        });
     }
 
     render () {
