@@ -6,9 +6,7 @@ import { Link } from 'react-router-dom';
 import PlayerPreview from './PlayerPreview';
 import Loading from './Loading';
 
-function Profile (props) {
-    const info = props.info;
-
+function Profile ({info}) {
     return (
         <PlayerPreview avatar={info.avatar_url} username={info.login}>
             <ul className='space-list-items'>
@@ -28,12 +26,12 @@ Profile.propTypes = {
     info: PropTypes.object.isRequired,
 }
 
-function Player (props) {
+function Player ({label, score, profile}) {
     return (
         <div>
-            <h1 className='header'>{props.label}</h1>
-            <h3 className='header'>Score: {props.score} </h3>
-            <Profile info={props.profile}/>
+            <h1 className='header'>{label}</h1>
+            <h3 className='header'>Score: {score} </h3>
+            <Profile info={profile}/>
         </div>
     )
 }

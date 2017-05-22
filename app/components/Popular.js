@@ -38,7 +38,7 @@ function RepoGrid (props) {
                         <li>
                             <img className='avatar'
                             src={repo.owner.avatar_url}
-                            alt={'Avatar for '+repo.owner.login} />
+                            alt={`Avatar for ${repo.owner.logi}`} />
                         </li>
                         <li><a href={repo.html_url}>{repo.name}</a></li>
                         <li>@{repo.owner.login}</li>
@@ -83,7 +83,7 @@ class Popular extends React.Component {
         api.fetchPopularRepos(lang).then((repos) => {
             this.setState(function (){
                 return {
-                    repos: repos
+                    repos
                 }
             })
         });
