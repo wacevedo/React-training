@@ -148,3 +148,23 @@ a {
 .reset:hover {
     cursor: pointer;
 }
+
+.label {
+    display: none;
+}
+
+.icons  {
+    font-size: 70px;
+}
+
+.icons li {
+    padding: 0 .5em 0 .5em;
+}
+
+.center-icons {
+    justify-content: center;
+}
+
+footer {
+    padding-top: 100px;
+}

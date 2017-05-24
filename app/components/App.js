@@ -5,6 +5,7 @@ import Battle from './Battle';
 import Results from './Results';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Nav from './Nav';
+import SocialButtons from './SocialButtons';
 
 class App extends React.Component {
     render() {
@@ -21,6 +22,7 @@ class App extends React.Component {
                             return <p>Not Found</p>
                         }}/>
                     </Switch>
+                    <SocialButtons/>
                 </div>
             </BrowserRouter>
         )
